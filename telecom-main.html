@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="telecom.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+      function getRTime() {
+        var EndTime = new Date("2022/12/25 00:00:00"); //CountDown Date
+        var NowTime = new Date();
+        var t = EndTime.getTime() - NowTime.getTime();
+        var d = Math.floor(t / 1000 / 60 / 60 / 24);
+        var h = Math.floor((t / 1000 / 60 / 60) % 24);
+        var m = Math.floor((t / 1000 / 60) % 60);
+        var s = Math.floor((t / 1000) % 60);
+
+        document.getElementById("t_d").innerHTML = d + " days";
+        document.getElementById("t_h").innerHTML = h + " Hours";
+        document.getElementById("t_m").innerHTML = m + " Mins";
+        document.getElementById("t_s").innerHTML = s + " Seconds Only !";
+      }
+      setInterval(getRTime, 1000);
+
+      function send() {
+        alert("Thank you for making contact!");
+      }
+    </script>
+    <title>% Telecom | Internet Provider</title>
+  </head>
+  <body>
+    <!-- Christmas countdown -->
+
+    <div class="container">
+      <header id="zoom">
+        <a href="telecom-main.html"
+          ><img id="logo1" src="images/logo.jpg" alt="mainlogo"
+        /></a>
+        <div class="search">
+          <a href="#"><img src="images/search.jpg"</a>
+        </div>
+        <div class="shopbag">
+          <a href="#"><img src="images/shopbag.jpg"</a>
+        </div>
+        <div class="login">
+          <a href="login.html"><img src="images/login.jpg"</a>
+        </div>
+        <div class="dropdown4">
+          <a href="signup.html"><button class="dropbtn">Sign Up</button></a>
+        </div>
+        <div class="dropdown">
+          <a href="#banner1"><button class="dropbtn">Shop</button></a>
+          <div class="dropdown-content">
+            <a href="#internet">High Speed Internet</a>
+            <a href="#phone">Digital Home Phone</a>
+            <a href="#">Package % TV</a>
+          </div>
+        </div>
+        <div class="dropdown3">
+          <a href="#feedback"><button class="dropbtn">Why choose %</button></a>
+        </div>
+        <div class="dropdown2">
+          <a href="#contactus"><button class="dropbtn">Contact Us</button></a>
+        </div>
+      </header>
+
+      <section class="count">
+        <div id="countdown">
+          <h2>2023 Christmas Countdown</h2>
+          <div>
+            <span id="t_d">00</span>
+            <span id="t_h">00</span>
+            <span id="t_m">00</span>
+            <span id="t_s">00</span>
+          </div>
+        </div>
+      </section>
+      <main class="main">
+        <div class="banner1">
+          <a href="#"><img id="banner1" src="images/banner.jpg" alt="%tv" /></a>
+        </div>
+        <section class="banners">
+          <div class="banner2">
+            <a href="#banner2"
+              ><img id="internet" src="images/internet.jpg" alt="internet"
+            /></a>
+          </div>
+          <div class="banner3">
+            <a href="#banner3"
+              ><img id="phone" src="images/phone.jpg" alt="phone"
+            /></a>
+          </div>
+        </section>
+        <!-- review section starts  -->
+
+        <div class="feed">
+          <h2 id="feedback"><br />Customer's Feedback<br /></h2>
+        </div>
+        <section class="review" class="review">
+          <div class="box-container">
+            <div class="box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti asperiores laboriosam praesentium enim maiores?
+              </p>
+              <div class="user">
+                <img src="images/pic-1.png" alt="" />
+                <div class="user-info">
+                  <h3>Leonardo DiCaprio</h3>
+                  <h2>&starf;&starf;&starf;&starf;&starf;</h2>
+                  <span>Montreal, QC</span>
+                  <br /><a href="#contactus"><button>❤️ Like</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti asperiores laboriosam praesentium enim maiores?
+              </p>
+              <div class="user">
+                <img src="images/pic-2.png" alt="" />
+                <div class="user-info">
+                  <h3>Angelina Jolie</h3>
+                  <h2>&starf;&starf;&starf;&starf;&starf;</h2>
+                  <span>Toronto, ON</span>
+                  <br /><a href="#contactus"><button>❤️ Like</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti asperiores laboriosam praesentium enim maiores?
+              </p>
+              <div class="user">
+                <img src="images/pic-3.png" alt="" />
+                <div class="user-info">
+                  <h3>George Clooney</h3>
+                  <h2>&starf;&starf;&starf;&starf;&starf;</h2>
+                  <span>Ottawa ON</span>
+                  <br /><a href="#contactus"><button>❤️ Like</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- review section ends -->
+        <!-- contact section starts  -->
+
+        <section class="contact">
+          <div>
+            <h2><br /><br />Contact Us</h2>
+          </div>
+
+          <div class="row" id="contactus">
+            <form action="">
+              <table>
+                <tr>
+                  <th>
+                    <input type="text" placeholder="Name" class="box" />
+                    <input type="email" placeholder="Email" class="box" />
+                    <input type="number" placeholder="Phone" class="box" />
+                    <textarea
+                      name=""
+                      class="box"
+                      placeholder="Message"
+                      id=""
+                      cols="30"
+                      rows="10"
+                    ></textarea
+                    ><br />
+                    <a href="telecom-main.html"
+                      ><input
+                        type="button"
+                        onclick="send()"
+                        value="send message"
+                        class="btn"
+                    /></a>
+                  </th>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </section>
+
+        <!-- contact section ends -->
+      </main>
+
+      <footer>
+        <!-- footer section starts  -->
+
+        <section class="footer">
+          <div class="box-container">
+            <div class="box">
+              <h3>MY ACCOUNT</h3>
+              <a href="login.html">Sign in</a>
+              <a href="signup.html">Register</a>
+            </div>
+
+            <div class="box">
+              <h3>SUPPORT</h3>
+              <a href="#">Setup guides</a>
+              <a href="#contactus">Contact us</a>
+            </div>
+
+            <div class="box">
+              <h3>RESOURSES</h3>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy policy</a>
+            </div>
+
+            <div class="box">
+              <h3>CONTACT INFO</h3>
+              <a href="#">&#9990;+514-456-6789</a>
+              <a href="#">&#9993;service@%telecom.com</a>
+              <img src="images/payment.png" alt="payment" />
+            </div>
+            <p id="copyrights">
+              Copyright © 2022 % Telecom Inc. All Rights Reserved.
+            </p>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
