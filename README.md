@@ -1,5 +1,7 @@
 # web-design-project  
-[HTML/CSS] Building a Website for % Telecom Company  
+[HTML/CSS] Building a Website for % Telecom Company    
+
+![web-design-project_% telecom-mainpage](https://user-images.githubusercontent.com/118141976/213333827-798bbd0c-c7d7-4116-a608-8f847499fcda.png)
 
 The name of the wesite is % Telecome.  
 % Telecome is a High-Speed Internet Provider with several types of product provided to the customer.  
